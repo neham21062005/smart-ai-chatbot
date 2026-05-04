@@ -6,7 +6,7 @@
 
 ## 📸 Demo
 
-![Chatbot Demo]()
+![Chatbot Demo](screenshot1.png)
 
 🔗 Live Demo: https://smart-ai-chatbot-fzdemxhahmm9fun7sykzcr.streamlit.app/
 
