@@ -1,0 +1,24 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey"],
+      "responses": ["Hello!", "Hi there!", "Hey! How can I help?"]
+    },
+    {
+      "tag": "course",
+      "patterns": ["AI course", "machine learning", "learn AI"],
+      "responses": ["You can start with Python, then ML basics using sklearn."]
+    },
+    {
+      "tag": "projects",
+      "patterns": ["project ideas", "AI projects"],
+      "responses": ["Try Resume Analyzer, Chatbot, or Prediction models."]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "see you"],
+      "responses": ["Goodbye!", "See you later!"]
+    }
+  ]
+}
