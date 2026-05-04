@@ -21,11 +21,14 @@ def get_response(user_input):
     user_vec = vectorizer.transform([user_input])
     similarity = cosine_similarity(user_vec, X)
     
+    score = similarity.max()   # highest similarity score
     index = similarity.argmax()
+    
+    if score < 0.3:
+        return "Sorry, I didn't understand that."
+    
     tag = tags[index]
 
     for intent in data["intents"]:
         if intent["tag"] == tag:
             return random.choice(intent["responses"])
-
-    return "Sorry, I didn't understand that."
