@@ -23,7 +23,6 @@ def get_response(user_input):
     similarity = cosine_similarity(user_vec, X)
 
     score = similarity.max()
-    st.write("DEBUG SCORE:", score)   
 
     if score < 0.6:
         return "Sorry, I didn't understand that."
