@@ -2,6 +2,7 @@ import streamlit as st
 from chatbot import get_response
 
 st.title("🤖 Smart AI Chatbot")
+st.write("APP RELOADED")
 
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
@@ -12,6 +13,7 @@ if st.button("Send"):
     if user_input:
         response = get_response(user_input)
         st.write("Bot:", response)
+        
         
         st.session_state.chat_history.append(("You", user_input))
         st.session_state.chat_history.append(("Bot", response))
