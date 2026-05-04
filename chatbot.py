@@ -23,7 +23,7 @@ def get_response(user_input):
     
     score = similarity.max()
     
-    if score < 0.3:
+    if score < 0.6:
         return "Sorry, I didn't understand that."
     
     index = similarity.argmax()
