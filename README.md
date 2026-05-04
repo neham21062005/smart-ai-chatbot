@@ -47,9 +47,9 @@ smart-ai-chatbot/ │── app.py │── chatbot.py │── intents.json �
 
 ## 🚀 Run Locally
 
-### 1. Clone the repository
+### 1. GitHub repository
 
-git clone https://github.com/neham21062005/smart-ai-chatbot.git⁠ 
+GitHub Repo: https://github.com/neham21062005/smart-ai-chatbot
 
 ### 2. Install dependencies
 
