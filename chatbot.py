@@ -32,3 +32,4 @@ def get_response(user_input):
     for intent in data["intents"]:
         if intent["tag"] == tag:
             return random.choice(intent["responses"])
+     return "Sorry, I didn't understand that."
