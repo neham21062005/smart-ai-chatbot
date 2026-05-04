@@ -1,5 +1,6 @@
 import json
 import random
+import streamlit as st
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -22,7 +23,7 @@ def get_response(user_input):
     similarity = cosine_similarity(user_vec, X)
 
     score = similarity.max()
-    print("DEBUG SCORE:", score)   
+    st.write("DEBUG SCORE:", score)   
 
     if score < 0.6:
         return "Sorry, I didn't understand that."
