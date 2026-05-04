@@ -20,7 +20,7 @@ X = vectorizer.fit_transform(patterns)
 def get_response(user_input):
     user_input = user_input.lower()
 
-    # keyword check first (important)
+    
     if any(word in user_input for word in ["hi", "hello", "hey"]):
         return "Hello!"
 
@@ -30,7 +30,7 @@ def get_response(user_input):
     if any(word in user_input for word in ["bye"]):
         return "Goodbye!"
 
-    # fallback NLP
+    
     user_vec = vectorizer.transform([user_input])
     similarity = cosine_similarity(user_vec, X)
     score = similarity.max()
