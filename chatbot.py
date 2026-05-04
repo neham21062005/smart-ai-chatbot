@@ -21,12 +21,12 @@ def get_response(user_input):
     user_vec = vectorizer.transform([user_input])
     similarity = cosine_similarity(user_vec, X)
     
-    score = similarity.max()   # highest similarity score
-    index = similarity.argmax()
+    score = similarity.max()
     
     if score < 0.3:
         return "Sorry, I didn't understand that."
     
+    index = similarity.argmax()
     tag = tags[index]
 
     for intent in data["intents"]:
